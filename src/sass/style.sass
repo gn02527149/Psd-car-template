@@ -160,6 +160,9 @@ body
   margin-left: 15px
   margin-top: 5px
 
+  .mobile
+    display: none
+
 
 .search
   float: right
@@ -201,9 +204,11 @@ body
     margin-right: 3px
     cursor: pointer
   
-  
     &:after
       clear: both
+
+  .mobile-button
+    display: none
     
     
 .menu
@@ -236,6 +241,10 @@ body
     width: 100%
     height: auto
     display: block
+
+  .mobile
+    display: none
+
 
   
   .button
@@ -322,6 +331,10 @@ body
       top: 0
       left: 0
 
+    .mobile
+      display: none
+
+
     .text
       float: left
       height: 160px
@@ -332,6 +345,7 @@ body
       h3
         font-size: 30px
         color: #2b2b2b
+
 
       p
         font-size: 17px
@@ -417,18 +431,140 @@ body
   background-color: #e8eaef
   cursor: pointer
 
+/*@media screen and (min-width: 1101px) and (max-width: 1366px)*/
+
 
 
 @media screen and (min-width: 781px) and (max-width: 1100px)
-  .slide ul li img
-    -webkit-background-size: cover
-    background-size: cover
+  .header
+    height: 50px
+    background-color: #fff
+    width: 100%
+
+    .sub-menu ul,.chat-line,.country,.language
+      display: none
+
+    #input_name,.other,.search-button
+      display: none 
+
+    .menu ul,.computer
+      display: none
 
 
-@media screen and (min-width: 320px) and (max-width: 780px)
-  .slide ul li img
-    -webkit-background-size: cover
+    .menu .button
+      background-image: url('../img/buttom.png')
+      width: 28px
+      height: 22px
+      position: absolute
+      left: 10%
+      cursor: pointer
+      top: 15px
+     
+    .logo
+      position: absolute
+      left: 50%
+      top: 30px
+      transform: translateX(-50%)translateY(-50%)
+        
+    .mobile
+      display: block
+
+    .search
+      height: 28px
+      width: 28px
+
+      .mobile-botton
+        display: block
+        background-image: url('../img/search.png')
+        position: absolute
+        right: 10%
+        top: 15px
+        height: 28px
+        width: 28px
+
+  .slide .computer,.buttons
+    display: none
+
+  .slide
+    height: 1100px 
+
+    .mobile
+      display: block
+      height: 1100px
+
+  .information .computer,.text
+    display: none
+
+  .contents,.content
+    width: 100% 
+    background-color: #27262c
+
+    .information-r
+      border: #27262c 
+
+    .information
+      width: 100%
+      height: 600px
+      padding: 20px 10px
+      background-color: #27262c 
+      
+      .mobile
+        width: 100%
+        display: block
+        height: 450px
+
+      .icon
+        float: none
+        position: relative
+        bottom: 0px
+        left: 3px
+        width: 99.5%
+        height: 150px
+        background-color: #f2f2f2
+        margin: 0 auto
+        display: inline-block
+
+        .fa
+          border: 2px solid #b2b2b2
+          color: #b2b2b2
+          border-radius: 100%
+          height: 60px
+          width: 60px
+          text-align: center
+          line-height: 60px
+          font-size: 35px
+          position: relative
+          top: 50%
+          transform: translateY(-50%)
+          margin-left: 20%
+          display: inline-block
+          background-color: #f2f2f2
+
+
+  .footer
+    background-image: url('../img/mobile-footer.png')
+    position: relative
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 550px
+    cursor: pointer
     background-size: cover
+    
+
+
+
+        
+        
+          
+
+  
+
+@media screen and (max-width: 780px)
+
+  .slide
+    height: 1480px 
+  
 
 
 
