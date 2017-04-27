@@ -95,6 +95,7 @@ gulp.task('copy-img', function(){
  */
 gulp.task('watch', function () {
   gulp.watch(paths.sass + '**/*.sass', ['sass']);
+  gulp.watch('./src/js/*', ['copy-js']);
   gulp.watch('./src/**/*.pug', ['rebuild']);
 });
 

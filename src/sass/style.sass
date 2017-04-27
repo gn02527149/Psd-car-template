@@ -11,7 +11,9 @@ html
 body
   width: 100%
   max-width: 1366px
+  min-width: 430px
   margin: 0 auto
+  font-size: 100%
   
   
 
@@ -147,10 +149,10 @@ body
       position: absolute
       right: -1px
       color: #c4c4c4
-      clear: both
     
     .last:after
       content: ""
+
     
     
 .logo
@@ -228,6 +230,9 @@ body
   
     a
       color: #ffffff
+
+    a:hover
+      color: #f97924
 
 
 
@@ -482,15 +487,156 @@ body
       
     .is-active
       background-color: #fff
+
+
+@media screen and (min-width: 951px) and (max-width: 1100px)
+  .header,.footer,.content
+    width: 100%
+  .header
+    height: 115px
+    position: relative
+
+  .sub-menu
+    width: 480px
+    
+  .chat-line
+    float: none
+    position: absolute
+    top: 0
+    right: 205px
+    
       
- 
+  .country
+    float: none
+    position: absolute
+    top: 0
+    right: 20px
+        
+  .logo
+    float: none
+    position: absolute
+    top: 35px
+    left: 0
+
+  .search
+    float: none
+    position: absolute
+    top: 35px
+    right: 5px
+      
+  .menu ul
+    display: none
+    
+  .slide .learn-more
+    cursor: pointer
+    position: absolute
+    color: #fff
+    right: 182px
+    bottom: 10%
+    height: 42px
+    width: 162px
+    border: 2px solid #fff
+    border-radius: 25px
+    text-align: center
+    line-height: 40px
+    font-size: 15px
+        
+  .slide .cutover
+    position: absolute
+    bottom: 5%
+    left: 50%
+    transform: translateX(-50%)translateY(-50%)
+    width: 110px
+    height: 12px
+    
+    .dot
+      height: 12px
+      width: 12px
+      border: 1px solid #fff
+      border-radius: 100%
+      float: left
+      margin-left: 10px
+      
+    .is-active
+      background-color: #fff
+  
+  .header .language
+    display: none
+
+    &:after
+      clear: both
+
+
+  .contents .information 
+    width: 100%
+
+    .text
+      width: 50%
+      
+      h3
+        font-size: 28px
+        
+      p
+        font-size: 15px
+        
+      a
+        font-size: 18px
+
+
+  .icons
+    float: right
+    width: 150px
+    height: 28px
+    margin-right: 20px
+    cursor: pointer
+    display: inline-block
+
+
+    .icon
+      border: 1px solid #b2b2b2
+      border-radius: 100%
+      height: 24px
+      width: 24px
+      text-align: center
+      margin-left: 6px
+      display: inline-block
+
+
+      .fa
+        color: #b2b2b2
+        font-size: 15px
+        line-height: 24px
 
 
 
+  .information-r .icons
+    margin-right: -394px
+    margin-top: 208px
+    
 
-@media screen and (max-width: 1100px)
+    .icon
+      border: 1px solid #ffffff
+      background-color: rgba(170,170,180,0.2)
+
+      .fa
+        color: #ffffff
+      
+
+
+
+  .footer-bg .footer
+    width: 100%
+    background: cover
+      
+
+
+
+@media screen and (max-width: 950px)
   html
     background-color: #27262c
+
+  body
+    font-size: 87.5%
 
   .header
     height: 50px
@@ -503,40 +649,61 @@ body
     #input_name,.other,.search-button
       display: none 
 
-    .menu ul,.computer
+    .computer
       display: none
 
+  .header-bg .header .logo
+    position: absolute
+    left: 50%
+    top: 30px
+    transform: translateX(-50%)translateY(-50%)
 
-    .menu .button
-      background-image: url('../img/buttom.png')
-      width: 28px
-      height: 22px
-      position: absolute
-      left: 10%
-      cursor: pointer
-      top: 15px
-     
-    .logo
-      position: absolute
-      left: 50%
-      top: 30px
-      transform: translateX(-50%)translateY(-50%)
-        
     .mobile
       display: block
 
-    .search
+      
+
+  .header-bg .header .menu
+    float: left
+    position: absolute
+    width: 25%
+    left: 10%
+
+    #menu-button
+      display: none
+      position: absolute
+      top: 30px
+      cursor: pointer
+
+
+      li
+        width: 100%
+  .header-bg .header .menu #menu-button.is-open
+    display: block
+
+
+  .header-bg .header .menu #button
+    display: block
+    background-image: url('../img/buttom.png')
+    width: 28px
+    height: 22px
+    position: absolute
+    cursor: pointer
+     
+  
+ 
+  .search
+    height: 28px
+    width: 28px
+
+    .mobile-botton
+      display: block
+      background-image: url('../img/search.png')
+      position: absolute
+      right: 10%
+      top: 15px
       height: 28px
       width: 28px
-
-      .mobile-botton
-        display: block
-        background-image: url('../img/search.png')
-        position: absolute
-        right: 10%
-        top: 15px
-        height: 28px
-        width: 28px
 
   .slide .computer,.buttons
     display: none
@@ -549,7 +716,7 @@ body
       display: block
       height: 100%
 
-  .information .computer,.text
+  .information .computer,.text p,.text a
     display: none
 
   .contents,.content
@@ -571,6 +738,20 @@ body
         padding-left: 2.7%
         padding-right: 2.7%
         position: absolute
+
+      .text
+        background-color: #fff
+        padding-bottom: 21%
+        position: absolute
+        width: 94.6%
+        margin: 0 2.7%
+        bottom: 18%
+        height: 0
+
+        h3
+          font-size: 2.375em
+          margin-left: 5%
+          margin-top: 5%
 
       .icons
         float: none
@@ -600,8 +781,8 @@ body
 
           .fa
             color: #b2b2b2
-            font-size: 30px
-            line-height: 30px
+            font-size: 1.875em
+            line-height: 25px
             position: absolute
             left: 50%
             top: 50%
@@ -640,7 +821,10 @@ body
       background-size: cover
       top: 0
    
-
+@media screen and (max-width: 600px)
+  body
+    font-size: 65%
+  
 
 
 
